@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artify - Your Personal Paint App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="banner">Artify</h1>
+    <div class="container">
+        <canvas id="paintCanvas"></canvas>
+        <div class="toolbar">
+            <input type="color" id="colorPicker" onchange="changeBrushColor(this.value)">
+            <input type="range" id="sizePicker" min="1" max="20" onchange="changeBrushSize(this.value)">
+            <button onclick="clearCanvas()">Clear</button>
+            <button onclick="enablePenMode()">Pen</button>
+            <button onclick="enableEraser()">Eraser</button>
+            <button onclick="saveCanvas()">Save</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
